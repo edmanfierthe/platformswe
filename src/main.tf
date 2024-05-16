@@ -25,3 +25,8 @@ module "tf-state" {
   source      = "./modules/tf-state"
   bucket_name = "platform-backend-test-ci-cd-gha"
 }
+
+module "lambda" {
+  source        = "./modules/lambda"
+  function_name = "platform-lambda-test"
+}
